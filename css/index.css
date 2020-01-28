@@ -69,43 +69,22 @@ h2 {
 }
 
 .nav-bar {
-	margin: 1%;
-	padding-bottom: 20px;
-	width: 80%;
-	display: inline-block;
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	z-index: 1;
-	background-color: #016abe;
-}
-
-.nav-bar a {
-	display: inline-block;
-	margin: 1%;
-	width: 6.25%;
-	min-width: 150px;
-	color: #10f774;
-	text-decoration: none;
-	text-align: center;
-}
-
-.nav-bar img {
-	display: inline;
-	width: 6.25%;
-	min-width: 150px;
-	padding-top: 25px;
-	margin-top: auto;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 0% auto;
 }
 
 .title {
-	position: relative;
-	padding-top: 100px;
-    margin: 2%;
-    width: 100%;
+    border: 1px solid red;
+    width: 90%;
+    margin: 0% auto;
 }
 
-.div1 {
+.title-words {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 75px;
@@ -114,13 +93,13 @@ h2 {
     width: 46%;
 }
 
-.div1 h1 {
+.title-words h1 {
 	text-align: center;
 	font-size: 350%;
 	font-family: 'Roboto Mono', monospace;
 }
 
-.div1 .button {
+.title-words .button {
 	text-align: center;
 	border: 1px solid black;
 	width: 150px;
@@ -129,7 +108,7 @@ h2 {
 	margin-right: auto;
 }
 
-.div2 {
+.title-img {
     display: inline-block;
     margin: 1%;
 	width: 32%;
@@ -137,16 +116,16 @@ h2 {
 }
 
 hr {
-	width: 80%;
-	margin: 1%;
+	width: 90%;
+	margin: 1% auto;
 }
 
-.body .div3 {
+.body .row1 {
 	margin: 1%;
     width: 80%;
 }
 
-.body .div3 .features {
+.body .row1 .features {
 	display: inline-block;
 	margin-left: 80px;
 	width: 46%;
@@ -154,40 +133,39 @@ hr {
 	height: 100%;
 }
 
-.body .div3 .about {
+.body .row1 .about {
 	display: inline-block;
 	margin: 1%;
 	width: 46%;
 	padding: 5px;
 }
 
-.body img {
-	margin-left: 200px;
-	
-	width: 80%;
-	padding: 2px;
+.middle-img {
+    display: block;
+    width: 90%;
+    margin: auto;
 }
 
-.body .div4 {
-	margin: 1%;
-    width: 80%;
+.body .row2 {
+	margin: 1% auto;
+    width: 90%;
 }
 
-.body .div4 .services {
+.body .row2 .services {
 	display: inline-block;
 	margin: 1%;
 	width: 30%;
 	padding: 5px;
 }
 
-.body .div4 .product {
+.body .row2 .product {
 	display: inline-block;
 	margin: 1%;
 	width: 30%;
 	padding: 5px;
 }
 
-.body .div4 .vision {
+.body .row2 .vision {
 	display: inline-block;
 	margin: 1%;
 	width: 30%;
