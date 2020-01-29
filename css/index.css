@@ -197,5 +197,17 @@ footer {
 }
 
 @media (max-width: 500px) {
+	.nav-bar .links {
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid gray;
+	}
 
+	a {
+		width: 100%;
+		text-align: center;
+		padding: 5% 0%;
+		border-top: 1px solid gray;
+	}
 }
