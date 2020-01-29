@@ -77,18 +77,31 @@ h2 {
     margin: 0% auto;
 }
 
-.title {
-    width: 90%;
-    margin: 0% auto;
+a {
+	text-decoration: none;
 }
 
-.title-words {
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 75px;
-    margin: 1%;
-    min-height: 20%;
-    width: 46%;
+.title {
+    width: 90%;
+	margin: 5% auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.title div {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.button {
+	text-align: center;
+	border: 1px solid black;
+	width: 200px;
+	padding: 10px 25px 10px 25px;
+	margin-top: 2%;
 }
 
 .title-words h1 {
@@ -97,29 +110,13 @@ h2 {
 	font-family: 'Roboto Mono', monospace;
 }
 
-.title-words .button {
-	text-align: center;
-	border: 1px solid black;
-	width: 150px;
-	padding: 10px 25px 10px 25px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.title-img {
-    display: inline-block;
-    margin: 1%;
-	width: 32%;
-	padding-left: 80px;
-}
-
 hr {
 	width: 90%;
 	margin: 1% auto;
 }
 
 .row1 {
-	margin: 1% auto;
+	margin: 3% auto;
 	width: 90%;
 	height: auto;
 	display: flex;
@@ -138,7 +135,7 @@ hr {
 }
 
 .row2 {
-	margin: 1% auto;
+	margin: 3% auto;
 	width: 90%;
 	display: flex;
 	flex-flow: row wrap;
@@ -171,4 +168,19 @@ footer {
 	width: 90%;
 }/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+@media (max-width: 800px) {
+	.nav-bar {
+		flex-flow: row-reverse wrap;
+	}
+	.title {
+		justify-content: center;
+		margin: 10% auto;
+	}
+	.title-img {
+		display: none;
+	}
+}
 
+@media (max-width: 500px) {
+
+}
