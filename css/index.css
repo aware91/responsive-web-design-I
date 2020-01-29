@@ -69,7 +69,6 @@ h2 {
 }
 
 .nav-bar {
-    border: 1px solid red;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -79,7 +78,6 @@ h2 {
 }
 
 .title {
-    border: 1px solid red;
     width: 90%;
     margin: 0% auto;
 }
@@ -120,61 +118,41 @@ hr {
 	margin: 1% auto;
 }
 
-.body .row1 {
-	margin: 1%;
-    width: 80%;
+.row1 {
+	margin: 1% auto;
+	width: 90%;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.body .row1 .features {
-	display: inline-block;
-	margin-left: 80px;
+.row1 div {
 	width: 46%;
-	padding: 5px;
-	height: 100%;
 }
-
-.body .row1 .about {
-	display: inline-block;
-	margin: 1%;
-	width: 46%;
-	padding: 5px;
-}
-
 .middle-img {
     display: block;
     width: 90%;
     margin: auto;
 }
 
-.body .row2 {
+.row2 {
 	margin: 1% auto;
-    width: 90%;
+	width: 90%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: space-around;
 }
 
-.body .row2 .services {
-	display: inline-block;
-	margin: 1%;
+.row2 div {
 	width: 30%;
-	padding: 5px;
-}
-
-.body .row2 .product {
-	display: inline-block;
-	margin: 1%;
-	width: 30%;
-	padding: 5px;
-}
-
-.body .row2 .vision {
-	display: inline-block;
-	margin: 1%;
-	width: 30%;
-	padding: 5px;
 }
 
 .contact {
-	margin: 1%;
-    width: 80%;
+	margin: 1% auto;
+    width: 90%;
 }
 
 .contact .phone {
@@ -188,9 +166,9 @@ hr {
 }
 
 footer {
-	margin: 1%;
+	margin: 1% auto;
 	text-align: center;
-	width: 80%;
+	width: 90%;
 }/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
