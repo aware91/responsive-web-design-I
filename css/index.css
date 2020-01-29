@@ -71,10 +71,18 @@ h2 {
 .nav-bar {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 90%;
     margin: 0% auto;
+}
+
+.nav-bar .links {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 0;
 }
 
 a {
@@ -170,8 +178,15 @@ footer {
 
 @media (max-width: 800px) {
 	.nav-bar {
-		flex-flow: row-reverse wrap;
+		flex-flow: column-reverse wrap;
+		justify-content: center;
+		justify-content: center;
 	}
+
+	.logo {
+		margin-bottom: 5%;
+	}
+
 	.title {
 		justify-content: center;
 		margin: 10% auto;
