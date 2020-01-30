@@ -63,9 +63,29 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Your code starts here! */
 h2 {
 	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Roboto Mono', monospace;
 }
 
 .nav-bar {
@@ -74,13 +94,14 @@ h2 {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 0% auto;
+	margin: 0% auto;
+	margin-bottom: 2%;
 }
 
 .nav-bar .links {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 80%;
 	margin: 0 0;
 }
@@ -89,92 +110,81 @@ a {
 	text-decoration: none;
 }
 
-.title {
-    width: 90%;
-	margin: 5% auto;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-}
-
-.title div {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.button {
-	text-align: center;
-	border: 1px solid black;
-	width: 200px;
-	padding: 10px 25px 10px 25px;
-	margin-top: 2%;
-}
-
-.title-words h1 {
-	text-align: center;
-	font-size: 350%;
-	font-family: 'Roboto Mono', monospace;
-}
-
-hr {
-	width: 90%;
-	margin: 1% auto;
-}
-
-.row1 {
-	margin: 3% auto;
-	width: 90%;
-	height: auto;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.row1 div {
-	width: 46%;
-}
-.middle-img {
+.services-header-img{
     display: block;
     width: 90%;
     margin: auto;
 }
 
-.row2 {
-	margin: 3% auto;
+.services {
 	width: 90%;
+	margin:1% auto;
+}
+
+hr {
+	width: 90%;
+}
+
+.body {
+	display: flex;
+	width: 90%;
+	margin: 0% auto;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-around;
+}
+
+.body div {
+	border: 1px solid black;
+	display: flex;
+	width: 48%;
+	justify-content: space-between;
+	background: #f4f3f4;
+	flex-flow: column wrap;
+	padding: 2%;
+	margin: 2% 0%;
+}
+
+.button {
+	border: 1px solid black;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	width: 150px;
+	text-align: center;
+	background: white;
+	margin-top: 5%;
+	padding: 2% 5%;
+}
+
+.facts {
+	width: 90%;
+	margin: 2% auto;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	align-items: space-around;
+	align-content: space-between;
 }
 
-.row2 div {
-	width: 30%;
+.facts div {
+	display: flex;
+	width: 48%;
+	flex-flow: row wrap;
 }
 
-.contact {
-	margin: 1% auto;
-    width: 90%;
-}
 
-.contact .phone {
-	display: block;
-	margin-top: 15px;
-}
-
-.contact .email {
-	display: block;
-	margin-top: 15px;
+ul {
+	list-style-type: disc;
+	margin-left: 19px;
 }
 
 footer {
 	margin: 1% auto;
 	text-align: center;
 	width: 90%;
-}/* Use your own code or past solution for Great Idea Web Page CSS here! */
+}
 
 @media (max-width: 800px) {
 	.nav-bar {
@@ -187,12 +197,38 @@ footer {
 		margin-bottom: 5%;
 	}
 
-	.title {
+	.services {
 		justify-content: center;
-		margin: 10% auto;
+		margin: 3% auto;
 	}
-	.title-img {
-		display: none;
+
+	.body {
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.body div {
+		margin: 2% 0%;
+		width: 100%;
+	}
+
+	.facts {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.facts div {
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	.facts p {
+		width: 65%;
+		margin-right: 5%;
 	}
 }
 
@@ -211,20 +247,15 @@ footer {
 		border-top: 1px solid gray;
 	}
 
-	.row1 {
-		flex-direction: column;
-	}
-	.row1 div {
+	.facts div {
+		justify-content: center;
+		align-items: center;
 		width: 100%;
-		margin: 5% 0%;
 	}
 
-	.row2 {
-		flex-direction: column;
-	}
-
-	.row2 div {
+	.facts p {
 		width: 100%;
-		margin: 5% 0%;
+		margin-bottom: 5%;
+		text-align: center;
 	}
 }
